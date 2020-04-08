@@ -1,4 +1,4 @@
-# Discrete Tomography
+# 🧩 Discrete Tomography
 [![made-with-Prolog](https://img.shields.io/badge/Made%20with-Prolog-1f425f.svg)](http://commonmark.org)[![GitHub stars](https://img.shields.io/github/stars/adriacabeza/DiscreteTomography?style=social&label=Star&maxAge=2592000)](https://GitHub.com/adriacabeza/DiscreteTomography/stargazers/)
 
 
@@ -45,21 +45,13 @@ Final path:[w(0,5),w(0,4),w(1,4),w(2,4),w(2,5),w(3,5),w(4,5),w(4,4),w(5,4),w(5,3
 ```
 
 ## Second problem
-Now we have some cells that we should avoid in our path. Notice that if we did not insert some cells to be avoided we could have several good results, for example this two would be valid for the question (the real solution is the one in the right):
-
-<p align="center">
-<img src="docs/maze1.jpg" height=400></img>
-<img src="docs/maze2.jpg" height=400></img>
-</p>
-
-
-Let's try with a bigger one, input:
+Now we have some cells that we should avoid in our path. Let's try with a bigger one, input:
 ```
 8
 6 4 2 4 8 5 7 7
 6 7 8 7 5 5 4 1
 0 5
-7 6
+4 7
 # cells to be avoided (x,y)
 3 1 
 5 5 
@@ -94,3 +86,13 @@ docker run -it -d -v PATH_TO_REPOSITORY:/workspace prolog &&
 docker exec -it name_of_container zsh
 swipl
 ```
+
+### 👀 Spoiler for the second one
+
+ Notice that if we did not insert some cells to be avoided we could have several good results, for example this two would be valid for the question (the real solution is the one in the right):
+
+<p align="center">
+<img src="docs/maze1.jpg" height=400></img>
+<img src="docs/maze2.jpg" height=400></img>
+</p>
+
